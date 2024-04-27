@@ -3,8 +3,8 @@ object Form2: TForm2
   Top = 242
   BorderStyle = bsToolWindow
   Caption = '   Muscat - '#1042#1099#1073#1077#1088#1080#1090#1077' '#1087#1072#1087#1082#1091' '#1076#1083#1103' '#1082#1086#1087#1080#1088#1086#1074#1072#1085#1080#1103
-  ClientHeight = 281
-  ClientWidth = 440
+  ClientHeight = 269
+  ClientWidth = 432
   Color = clSilver
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,17 +12,15 @@ object Form2: TForm2
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   KeyPreview = True
-  OldCreateOrder = False
   Position = poScreenCenter
   OnActivate = FormActivate
   OnKeyPress = FormKeyPress
-  PixelsPerInch = 96
   TextHeight = 13
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 440
-    Height = 281
+    Width = 432
+    Height = 269
     Align = alClient
     BevelInner = bvLowered
     BevelWidth = 2
@@ -32,6 +30,8 @@ object Form2: TForm2
     Ctl3D = False
     ParentCtl3D = False
     TabOrder = 0
+    ExplicitWidth = 424
+    ExplicitHeight = 257
     object SpeedButton1: TSpeedButton
       Left = 304
       Top = 168
@@ -347,6 +347,12 @@ object Form2: TForm2
       BevelOuter = bvNone
       Color = 16644323
       DirList = DirectoryListBox1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 1
     end
     object DirectoryListBox1: TDirectoryListBox
@@ -359,8 +365,13 @@ object Form2: TForm2
       BevelOuter = bvSpace
       Color = 16644323
       Ctl3D = True
-      ItemHeight = 16
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
       ParentCtl3D = False
+      ParentFont = False
       TabOrder = 2
       OnChange = DirectoryListBox1Change
     end
@@ -370,8 +381,6 @@ object Form2: TForm2
       Width = 153
       Height = 25
       Caption = #1054#1090#1082#1088#1099#1090#1100' '#1087#1088#1086#1074#1086#1076#1085#1080#1082
-      TabOrder = 3
-      OnClick = BitBtn1Click
       Glyph.Data = {
         DE010000424DDE01000000000000760000002800000024000000120000000100
         0400000000006801000000000000000000001000000000000000000000000000
@@ -390,6 +399,8 @@ object Form2: TForm2
         33333333333333833F3333330000333333336663333333333333333888333333
         0000}
       NumGlyphs = 2
+      TabOrder = 3
+      OnClick = BitBtn1Click
     end
   end
 end

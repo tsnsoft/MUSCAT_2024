@@ -11,9 +11,7 @@ object Form3: TForm3
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
-  PixelsPerInch = 96
   TextHeight = 13
   object Panel2: TPanel
     Left = 0
@@ -27,6 +25,8 @@ object Form3: TForm3
     Ctl3D = False
     ParentCtl3D = False
     TabOrder = 0
+    ExplicitWidth = 416
+    ExplicitHeight = 271
     object Memo1: TMemo
       Left = 14
       Top = 16
@@ -35,7 +35,7 @@ object Form3: TForm3
       Color = 16644323
       Font.Charset = DEFAULT_CHARSET
       Font.Color = 9573303
-      Font.Height = -11
+      Font.Height = -12
       Font.Name = 'MS Sans Serif'
       Font.Style = []
       ParentFont = False

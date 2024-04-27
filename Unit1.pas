@@ -154,28 +154,28 @@ begin
 
   { MUSCAT - Processor }
   for i:=1 to Spisok.count do begin
-     if not FileExists(pansichar(Spisok[i-1])) then begin
+     if not FileExists(pwidechar(Spisok[i-1])) then begin
        inc(kol_neudach_fail);
        form3.Memo1.Lines.add(inttostr(kol_neudach_fail)+') '+Spisok[i-1]);
        ProgressBar1.Position:=i; application.ProcessMessages; continue;
      end;
 
 
-     try SetFileAttributes(pansichar('\\?\'+Spisok[i-1]),FILE_ATTRIBUTE_NORMAL); except end;
+     try SetFileAttributes(pwidechar('\\?\'+Spisok[i-1]),FILE_ATTRIBUTE_NORMAL); except end;
 
      if CheckBox_PF.Checked then begin
-       fuf:=movefile(pansichar(Spisok[i-1]),
-          pansichar(Edit_NF_Folder.Text+ExtractFileName(Spisok[i-1])))
+       fuf:=movefile(pwidechar(Spisok[i-1]),
+          pwidechar(Edit_NF_Folder.Text+ExtractFileName(Spisok[i-1])))
        end else begin
-       fuf:=copyfile(pansichar(Spisok[i-1]),
-          pansichar(Edit_NF_Folder.Text+ExtractFileName(Spisok[i-1])), true)
+       fuf:=copyfile(pwidechar(Spisok[i-1]),
+          pwidechar(Edit_NF_Folder.Text+ExtractFileName(Spisok[i-1])), true)
        end;
 
 
        if not fuf then begin
          1: if flag_stop_proc then break;
-         fc:=copyfile(pansichar(Spisok[i-1]),
-             pansichar(Edit_NF_Folder.Text+
+         fc:=copyfile(pwidechar(Spisok[i-1]),
+             pwidechar(Edit_NF_Folder.Text+
              '('+inttostr(numb_generator)+') '+
              ExtractFileName(Spisok[i-1])), true);
              inc(numb_generator); application.ProcessMessages;
@@ -194,8 +194,8 @@ begin
 
      if CheckBox_PF.Checked  and fc then begin
         try
-        try SetFileAttributes(pansichar('\\?\'+Spisok[i-1]),FILE_ATTRIBUTE_NORMAL); except end;
-        if not DeleteFile(pansichar(Spisok[i-1])) then begin
+        try SetFileAttributes(pwidechar('\\?\'+Spisok[i-1]),FILE_ATTRIBUTE_NORMAL); except end;
+        if not DeleteFile(pwidechar(Spisok[i-1])) then begin
           fe:=true; form3.Memo1.Lines.add('[не удален->] '+Spisok[i-1]);
         end;
         except

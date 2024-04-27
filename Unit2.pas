@@ -69,7 +69,7 @@ end;
 
 procedure TForm2.BitBtn1Click(Sender: TObject);
 begin
-  ShellExecute(handle, nil, pansichar(DirectoryListBox1.Directory),
+  ShellExecute(handle, nil, pwidechar(DirectoryListBox1.Directory),
      nil, nil, SW_SHOWNORMAL);
 end;
 

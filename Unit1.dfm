@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 156
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Muscat 2004+   '#1054#1090#1073#1086#1088' '#1092#1072#1081#1083#1086#1074' '#1080#1079' '#1084#1077#1076#1080#1072'-'#1089#1087#1080#1089#1082#1086#1074' (by -TSN-) '
+  Caption = 'Muscat 2004+, 2024   '#1054#1090#1073#1086#1088' '#1092#1072#1081#1083#1086#1074' '#1080#1079' '#1084#1077#1076#1080#1072'-'#1089#1087#1080#1089#1082#1086#1074' (by -TSN-) '
   ClientHeight = 480
   ClientWidth = 441
   Color = 13425123
@@ -12,11 +12,9 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
   TextHeight = 13
   object Shape3: TShape
     Left = 19
@@ -635,7 +633,7 @@ object Form1: TForm1
     Alignment = taCenter
     Caption = 
       #1056#1072#1079#1088#1072#1073#1086#1090#1095#1080#1082': '#1058#1072#1083#1080#1087#1086#1074' '#1057#1077#1088#1075#1077#1081' '#1053#1080#1082#1086#1083#1072#1077#1074#1080#1095', '#1075'. '#1055#1072#1074#1083#1086#1076#1072#1088', '#1050#1072#1079#1072#1093#1089#1090#1072#1085#13#10 +
-      'e-mail: tsn_proff@mail.ru'
+      'e-mail: talipovsn@gmail.com'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
     Font.Height = -11
@@ -666,30 +664,36 @@ object Form1: TForm1
     Top = 247
     Width = 385
     Height = 21
+    TabStop = False
+    Alignment = taCenter
     Color = 16644323
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 9573303
-    Font.Height = -11
+    Font.Height = -12
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
     ReadOnly = True
     TabOrder = 0
+    Text = #1085#1072#1078#1084#1080#1090#1077' '#1082#1085#1086#1087#1082#1091' '#1074#1099#1096#1077' '#1076#1083#1103' '#1074#1099#1073#1086#1088#1072' '#1087#1083#1077#1081#1083#1080#1089#1090#1072
   end
   object Edit_NF_Folder: TEdit
     Left = 32
     Top = 287
     Width = 385
     Height = 21
+    TabStop = False
+    Alignment = taCenter
     Color = 16644323
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 9573303
-    Font.Height = -11
+    Font.Height = -12
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
     ReadOnly = True
     TabOrder = 1
+    Text = #1080' '#1085#1072' '#1076#1088#1091#1075#1091#1102' '#1082#1085#1086#1087#1082#1091' '#1076#1083#1103' '#1074#1099#1073#1086#1088#1072' '#1094#1077#1083#1077#1074#1086#1075#1086' '#1082#1072#1090#1072#1083#1086#1075#1072
   end
   object Panel1: TPanel
     Left = 16
